@@ -27,7 +27,11 @@
 
     <!-- Adicione suas dependências aqui, mas não altere as que já estão configuradas -->
 
-
+    <!-- For spring-boot-starter-actuator -->
+    <dependency>
+  			<groupId>org.springframework.boot</groupId>
+   			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 
 
     <!-- Spring Boot -->
