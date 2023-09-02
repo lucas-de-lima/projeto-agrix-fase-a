@@ -4,7 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import java.util.List;
 
 /**
  * Farms.
@@ -18,11 +20,12 @@ public class Farms {
   private Long id;
   private String name;
   private Double size;
-  
+  @OneToMany(mappedBy = "farm")
+  private List<Crops> crops;
+
   /**
    * Farms.
    */
-
 
   public Farms(Long id, String name, Double size) {
     this.id = id;
@@ -54,6 +57,10 @@ public class Farms {
 
   public void setSize(Double size) {
     this.size = size;
+  }
+
+  public List<Crops> getCrops() {
+    return crops;
   }
 
 }
