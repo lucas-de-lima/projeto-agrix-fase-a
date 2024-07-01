@@ -317,13 +317,13 @@ Para garantir que a imagem Docker funciona corretamente, siga os passos abaixo:
 
 1.  **Construir a Imagem:**
 
-    ```sh
+    ```bash
     docker build -t agrix-api .
     ```
 
 2.  **Executar a Imagem:**
 
-    ```sh
+    ```bash
     docker run -p 8080:8080 agrix-api
     ```
 
