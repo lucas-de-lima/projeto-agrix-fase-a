@@ -1,14 +1,22 @@
 # Agrix API - Projeto Fase A
 
-Bem-vindo ao repositório do projeto Agrix API! Este projeto faz parte da Fase A do desenvolvimento de uma aplicação para controle e gerenciamento de fazendas. Aqui, você encontrará todas as instruções necessárias para configurar, desenvolver e testar sua aplicação, utilizando o ecossistema Spring (Spring Boot, Spring Web, Spring Data, etc).
+## Confira todas as fases do projeto aqui:
+
+| Fase   | Link                                                            |
+| ------ | --------------------------------------------------------------- |
+| Fase A | [Fase A](https://github.com/lucas-de-lima/projeto-agrix-fase-a) |
+| Fase B | [Fase B](https://github.com/lucas-de-lima/projeto-agrix-fase-b) |
+| Fase C | [Fase C](https://github.com/lucas-de-lima/projeto-agrix-fase-c) |
+
+Bem-vindo ao repositório do projeto Agrix API! Este projeto faz parte da [Fase A](https://github.com/lucas-de-lima/projeto-agrix-fase-a) do desenvolvimento de uma aplicação para controle e gerenciamento de fazendas. Aqui, você encontrará todas as instruções necessárias para configurar, desenvolver e testar essa aplicação, utilizando o ecossistema Spring (Spring Boot, Spring Web, Spring Data, etc).
 
 ## Informações Gerais
 
-Este projeto se concentra na criação de uma API RESTful para o gerenciamento de fazendas, plantações e fertilizantes. A seguir, detalharemos a estrutura do banco de dados, os requisitos para a implementação da API e as rotas necessárias.
+Este projeto se concentra na criação de uma API RESTful para o gerenciamento de fazendas, plantações e fertilizantes. A seguir, detalharei a estrutura do banco de dados, a implementação da API e as rotas disponíveis.
 
 ## Descrição do Banco de Dados
 
-Sua aplicação deverá considerar o seguinte modelo de tabelas:
+A aplicação tem o seguinte modelo de tabelas:
 
 ![Modelo de tabelas](images/agrix-tabelas-fase-a.png)
 
@@ -16,7 +24,7 @@ Neste modelo, temos as seguintes tabelas:
 
 - **`farm`**: representa uma fazenda.
 - **`crop`**: representa uma plantação e está em um relacionamento `n:1` (muitos para um) com a tabela `farm`.
-- **`fertilizer`**: representa um fertilizante e está em um relacionamento `n:n` (muitos para muitos) com a tabela `crop`. Esse relacionamento é realizado através da tabela `crop_fertilizer`.
+- **`fertilizer`**: representa um fertilizante e está em um relacionamento `n:n` (muitos para muitos) com a tabela `crop`. Esse relacionamento é realizado através da tabela `crop_fertilizer`, e aparece pela primeira vez na [Fase B](https://github.com/lucas-de-lima/projeto-agrix-fase-b) do projeto.
 
 ## Detalhes do Projeto
 
@@ -334,3 +342,9 @@ Com esses comandos, a aplicação será executada no Docker, e você poderá ace
 ### Conclusão
 
 Com o Dockerfile multi-estágio, garantimos que a Agrix API possa ser construída, empacotada e executada de maneira eficiente e consistente em qualquer ambiente. Esta abordagem facilita a distribuição e implantação da aplicação, proporcionando um processo de desenvolvimento mais ágil e robusto.
+Nesta fase projeto eu apliquei o conhecimento que adquiri, e consegui ser capaz de:
+- Aplicar o conhecimento do ecossistema Spring para criar rotas da API.
+- Aplicar a injeção de dependência para conectar as camadas de controle, serviço e persistência.
+- Utilizar o Spring Data JPA para implementar entidades e repositórios para a persistência em banco de dados.
+- Implementar gerenciamento de erros no Spring Web.
+- Criar o Dockerfile para configurar a aplicação para execução no Docker.
