@@ -1,6 +1,14 @@
 # Agrix API - Projeto Fase A
 
-Bem-vindo ao repositório do projeto Agrix API! Este projeto faz parte da Fase A do desenvolvimento de uma aplicação para controle e gerenciamento de fazendas. Aqui, você encontrará todas as instruções necessárias para configurar, desenvolver e testar sua aplicação, utilizando o ecossistema Spring (Spring Boot, Spring Web, Spring Data, etc).
+## Confira todas as fases do projeto aqui:
+
+| Fase   | Link                                                            |
+| ------ | --------------------------------------------------------------- |
+| Fase A | [Fase A](https://github.com/lucas-de-lima/projeto-agrix-fase-a) |
+| Fase B | [Fase B](https://github.com/lucas-de-lima/projeto-agrix-fase-b) |
+| Fase C | [Fase C](https://github.com/lucas-de-lima/projeto-agrix-fase-c) |
+
+Bem-vindo ao repositório do projeto Agrix API! Este projeto faz parte da [Fase A](https://github.com/lucas-de-lima/projeto-agrix-fase-a) do desenvolvimento de uma aplicação para controle e gerenciamento de fazendas. Aqui, você encontrará todas as instruções necessárias para configurar, desenvolver e testar sua aplicação, utilizando o ecossistema Spring (Spring Boot, Spring Web, Spring Data, etc).
 
 ## Informações Gerais
 
